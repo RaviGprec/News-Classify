@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+    <title>News Classfication</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/index.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <form class="form-inline" action="{{ url_for('predict')}}" method="post">
+            <div style="text-align:center">
+                <h1>
+                    Article Classfication
+                </h1>
+                <div style="text-align:left">
+                    <h3>
+                        Please provide the news article story to see the category (Bussiness, Entertainment, Sports, Politics etc) that the article belongs to.
+                    </h3>
+                </div>
+                <div style="text-align:left">
+                    <div class="form-group">
+                        <!--<textarea type="text" name="area" placeholder="" required="required" /></textarea>-->
+                        <textarea type="text" id="ntext" #newHero id="inputText" class="magellan-input__textarea"
+                            rows="4" cols="100" placeholder="Paste text to analyze" required="required" /></textarea>
+                        
+                    </div>
+                    <div style="text-align:left">
+                        <button type="submit" class="magellan-input__button">Predict</button>
+
+                    </div>
+                </div>
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
