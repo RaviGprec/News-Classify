@@ -1,4 +1,5 @@
-stopwords
-punkt
+corpus
+tokenize
+stem
 wordnet
 WordNetLemmatizer
