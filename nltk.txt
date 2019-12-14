@@ -1,4 +1,4 @@
-corpus
+stopwords
 tokenize
 stem
 wordnet
