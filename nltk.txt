@@ -1,5 +1,1 @@
-stopwords
-tokenize
-stem
 wordnet
-WordNetLemmatizer
